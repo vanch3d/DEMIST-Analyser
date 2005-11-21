@@ -1,0 +1,48 @@
+ 
+// Commands (ID_* and IDM_*) 
+HID_VIEW_ANALYSEBAR                     0x18002
+HID_VIEW_LOGVIEW                        0x18003
+HID_VIEW_SCENARIO                       0x18004
+HID_VIEW_SUMMARY                        0x18005
+HID_VIEW_TABLE                          0x18006
+HID_VIEW_AVAILABILITY                   0x18007
+HID_VIEW_CATEGORY                       0x18009
+HID_VIEW_INFORMATION                    0x1800A
+HID_VIEW_RUNREVIEW                      0x1800B
+HID_SCENARIO_LIST                       0x1800C
+HID_SCENARIO_NEXT                       0x1800D
+HID_SCENARIO_PREV                       0x1800E
+HID_SUMMARY_ZPLUS                       0x1800F
+HID_SUMMARY_ZMOINS                      0x18010
+HID_SUMMARY_ACTIV                       0x18011
+HID_SUMMARY_ACTION                      0x18012
+HID_SUMMARY_HYP                         0x18013
+HID_SUMMARY_REL                         0x18014
+HID_SUMMARY_EXPSET                      0x18015
+HID_SUMMARY_RUN                         0x18016
+HID_CATEGORY_ALPHA                      0x18017
+HID_VIEW_CATLIST                        0x18018
+HID_CATEGORY_PERCENT                    0x18019
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_VIEWCATEGORIES_TMPL                0x20066
+HIDR_MAINFRAME                          0x20080
+HIDR_DEMISTTYPE                         0x20081
+HIDR_LOGFILE                            0x20082
+HIDR_MODELSFILE                         0x20083
+HIDR_SUMMARY_VIEW                       0x20084
+HIDR_ANALYSE                            0x20085
+HIDR_TABLE                              0x20086
+HIDR_AVAILABILITY                       0x20087
+HIDR_CATEGORY                           0x20088
+HIDR_INFORMATION                        0x20089
+HIDR_RUNREVIEW                          0x2008A
+HIDR_CATLIST                            0x2008B
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_CATEGORIES                         0x20065
+ 
+// Frame Controls (IDW_*) 

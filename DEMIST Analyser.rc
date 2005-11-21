@@ -1,0 +1,1128 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DEMIST Analyser.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_VIEWCATEGORIES_TMPL ICON    DISCARDABLE     "mdi.ico"
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\DEMIST Analyser.ico"
+IDR_DEMISTTYPE          ICON    DISCARDABLE     "res\\DADoc.ico"
+IDR_MODELSFILE          ICON    DISCARDABLE     "res\\idr_mode.ico"
+IDR_LOGFILE             ICON    DISCARDABLE     "res\\idr_logf.ico"
+IDR_SUMMARY_VIEW        ICON    DISCARDABLE     "res\\idr_summ.ico"
+IDR_TABLE               ICON    DISCARDABLE     "res\\idr_tabl.ico"
+IDR_AVAILABILITY        ICON    DISCARDABLE     "res\\idr_cate.ico"
+IDR_CATEGORY            ICON    DISCARDABLE     "res\\icocat.ico"
+IDR_INFORMATION         ICON    DISCARDABLE     "res\\ico00001.ico"
+IDR_CATLIST             ICON    DISCARDABLE     "res\\idr_demi.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_MODELSFILE          BITMAP  MOVEABLE PURE   "res\\mainfram.bmp"
+IDR_ANALYSE             BITMAP  MOVEABLE PURE   "res\\analyse.bmp"
+IDR_SUMMARY_VIEW        BITMAP  MOVEABLE PURE   "res\\summary.bmp"
+IDB_TABLE_IDX           BITMAP  DISCARDABLE     "res\\tableIDX.bmp"
+IDR_CATEGORY            BITMAP  MOVEABLE PURE   "res\\category.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_FILE_PRINT_PREVIEW
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+END
+
+IDR_MODELSFILE TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_SCENARIO_PREV
+    BUTTON      ID_SCENARIO_LIST
+    BUTTON      ID_SCENARIO_NEXT
+END
+
+IDR_ANALYSE TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_VIEW_LOGVIEW
+    BUTTON      ID_VIEW_SCENARIO
+    SEPARATOR
+    BUTTON      ID_VIEW_SUMMARY
+    BUTTON      ID_VIEW_TABLE
+    SEPARATOR
+    BUTTON      ID_VIEW_AVAILABILITY
+    BUTTON      ID_VIEW_CATEGORY
+    SEPARATOR
+    BUTTON      ID_VIEW_INFORMATION
+END
+
+IDR_SUMMARY_VIEW TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_SUMMARY_ZMOINS
+    BUTTON      ID_SUMMARY_ZPLUS
+    SEPARATOR
+    BUTTON      ID_SUMMARY_ACTIV
+    SEPARATOR
+    BUTTON      ID_SUMMARY_ACTION
+    BUTTON      ID_SUMMARY_HYP
+    BUTTON      ID_SUMMARY_REL
+    BUTTON      ID_SUMMARY_EXPSET
+    BUTTON      ID_SUMMARY_RUN
+END
+
+IDR_CATEGORY TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_SCENARIO_PREV
+    BUTTON      ID_SCENARIO_NEXT
+    SEPARATOR
+    BUTTON      ID_CATEGORY_ALPHA
+    BUTTON      ID_CATEGORY_PERCENT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Analyse Bar",                ID_VIEW_ANALYSEBAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About DEMIST Analyser...",   ID_APP_ABOUT
+    END
+END
+
+IDR_DEMISTTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Analyse Bar",                ID_VIEW_ANALYSEBAR
+        MENUITEM SEPARATOR
+        MENUITEM "Rep. Categories",             ID_VIEW_CATLIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Log File",                   ID_VIEW_LOGVIEW
+        MENUITEM "S&cenarios",                  ID_VIEW_SCENARIO
+        MENUITEM SEPARATOR
+        MENUITEM "Time &Usage",                 ID_VIEW_SUMMARY
+        MENUITEM "Su&mmary",                    ID_VIEW_TABLE
+        MENUITEM SEPARATOR
+        MENUITEM "A&vailability",               ID_VIEW_AVAILABILITY
+        MENUITEM "Categ&ory",                   ID_VIEW_CATEGORY
+        MENUITEM "In&formation",                ID_VIEW_INFORMATION
+        MENUITEM "Run/Review",                  ID_VIEW_RUNREVIEW
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About DEMIST Analyser...",   ID_APP_ABOUT
+    END
+END
+
+IDR_LOGFILE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Analyse Bar",                ID_VIEW_ANALYSEBAR
+        MENUITEM SEPARATOR
+        MENUITEM "Rep. Categories",             ID_VIEW_CATLIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Log File",                   ID_VIEW_LOGVIEW
+        MENUITEM "S&cenarios",                  ID_VIEW_SCENARIO
+        MENUITEM SEPARATOR
+        MENUITEM "Time &Usage",                 ID_VIEW_SUMMARY
+        MENUITEM "Su&mmary",                    ID_VIEW_TABLE
+        MENUITEM SEPARATOR
+        MENUITEM "A&vailability",               ID_VIEW_AVAILABILITY
+        MENUITEM "Categ&ory",                   ID_VIEW_CATEGORY
+        MENUITEM "In&formation",                ID_VIEW_INFORMATION
+        MENUITEM "Run/Review",                  ID_VIEW_RUNREVIEW
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About DEMIST Analyser...",   ID_APP_ABOUT
+    END
+END
+
+IDR_MODELSFILE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Analyse Bar",                ID_VIEW_ANALYSEBAR
+        MENUITEM SEPARATOR
+        MENUITEM "Rep. Categories",             ID_VIEW_CATLIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Log File",                   ID_VIEW_LOGVIEW
+        MENUITEM "S&cenarios",                  ID_VIEW_SCENARIO
+        MENUITEM SEPARATOR
+        MENUITEM "Time &Usage",                 ID_VIEW_SUMMARY
+        MENUITEM "Su&mmary",                    ID_VIEW_TABLE
+        MENUITEM SEPARATOR
+        MENUITEM "A&vailability",               ID_VIEW_AVAILABILITY
+        MENUITEM "Categ&ory",                   ID_VIEW_CATEGORY
+        MENUITEM "In&formation",                ID_VIEW_INFORMATION
+        MENUITEM "Run/Review",                  ID_VIEW_RUNREVIEW
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About DEMIST Analyser...",   ID_APP_ABOUT
+    END
+END
+
+IDR_SUMMARY_VIEW MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Analyse Bar",                ID_VIEW_ANALYSEBAR
+        MENUITEM SEPARATOR
+        MENUITEM "Rep. Categories",             ID_VIEW_CATLIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Log File",                   ID_VIEW_LOGVIEW
+        MENUITEM "S&cenarios",                  ID_VIEW_SCENARIO
+        MENUITEM SEPARATOR
+        MENUITEM "Time &Usage",                 ID_VIEW_SUMMARY
+        MENUITEM "Su&mmary",                    ID_VIEW_TABLE
+        MENUITEM SEPARATOR
+        MENUITEM "A&vailability",               ID_VIEW_AVAILABILITY
+        MENUITEM "Categ&ory",                   ID_VIEW_CATEGORY
+        MENUITEM "In&formation",                ID_VIEW_INFORMATION
+        MENUITEM "Run/Review",                  ID_VIEW_RUNREVIEW
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About DEMIST Analyser...",   ID_APP_ABOUT
+    END
+END
+
+IDR_TABLE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Analyse Bar",                ID_VIEW_ANALYSEBAR
+        MENUITEM SEPARATOR
+        MENUITEM "Rep. Categories",             ID_VIEW_CATLIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Log File",                   ID_VIEW_LOGVIEW
+        MENUITEM "S&cenarios",                  ID_VIEW_SCENARIO
+        MENUITEM SEPARATOR
+        MENUITEM "Time &Usage",                 ID_VIEW_SUMMARY
+        MENUITEM "Su&mmary",                    ID_VIEW_TABLE
+        MENUITEM SEPARATOR
+        MENUITEM "A&vailability",               ID_VIEW_AVAILABILITY
+        MENUITEM "Categ&ory",                   ID_VIEW_CATEGORY
+        MENUITEM "In&formation",                ID_VIEW_INFORMATION
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About DEMIST Analyser...",   ID_APP_ABOUT
+    END
+END
+
+IDR_AVAILABILITY MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Analyse Bar",                ID_VIEW_ANALYSEBAR
+        MENUITEM SEPARATOR
+        MENUITEM "Rep. Categories",             ID_VIEW_CATLIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Log File",                   ID_VIEW_LOGVIEW
+        MENUITEM "S&cenarios",                  ID_VIEW_SCENARIO
+        MENUITEM SEPARATOR
+        MENUITEM "Time &Usage",                 ID_VIEW_SUMMARY
+        MENUITEM "Su&mmary",                    ID_VIEW_TABLE
+        MENUITEM SEPARATOR
+        MENUITEM "A&vailability",               ID_VIEW_AVAILABILITY
+        MENUITEM "Categ&ory",                   ID_VIEW_CATEGORY
+        MENUITEM "In&formation",                ID_VIEW_INFORMATION
+        MENUITEM "Run/Review",                  ID_VIEW_RUNREVIEW
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About DEMIST Analyser...",   ID_APP_ABOUT
+    END
+END
+
+IDR_CATEGORY MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Analyse Bar",                ID_VIEW_ANALYSEBAR
+        MENUITEM SEPARATOR
+        MENUITEM "Rep. Categories",             ID_VIEW_CATLIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Log File",                   ID_VIEW_LOGVIEW
+        MENUITEM "S&cenarios",                  ID_VIEW_SCENARIO
+        MENUITEM SEPARATOR
+        MENUITEM "Time &Usage",                 ID_VIEW_SUMMARY
+        MENUITEM "Su&mmary",                    ID_VIEW_TABLE
+        MENUITEM SEPARATOR
+        MENUITEM "A&vailability",               ID_VIEW_AVAILABILITY
+        MENUITEM "Categ&ory",                   ID_VIEW_CATEGORY
+        MENUITEM "In&formation",                ID_VIEW_INFORMATION
+        MENUITEM "Run/Review",                  ID_VIEW_RUNREVIEW
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About DEMIST Analyser...",   ID_APP_ABOUT
+    END
+END
+
+IDR_INFORMATION MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Analyse Bar",                ID_VIEW_ANALYSEBAR
+        MENUITEM SEPARATOR
+        MENUITEM "Rep. Categories",             ID_VIEW_CATLIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Log File",                   ID_VIEW_LOGVIEW
+        MENUITEM "S&cenarios",                  ID_VIEW_SCENARIO
+        MENUITEM SEPARATOR
+        MENUITEM "Time &Usage",                 ID_VIEW_SUMMARY
+        MENUITEM "Su&mmary",                    ID_VIEW_TABLE
+        MENUITEM SEPARATOR
+        MENUITEM "A&vailability",               ID_VIEW_AVAILABILITY
+        MENUITEM "Categ&ory",                   ID_VIEW_CATEGORY
+        MENUITEM "In&formation",                ID_VIEW_INFORMATION
+        MENUITEM "Run/Review",                  ID_VIEW_RUNREVIEW
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About DEMIST Analyser...",   ID_APP_ABOUT
+    END
+END
+
+IDR_RUNREVIEW MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Analyse Bar",                ID_VIEW_ANALYSEBAR
+        MENUITEM SEPARATOR
+        MENUITEM "Rep. Categories",             ID_VIEW_CATLIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Log File",                   ID_VIEW_LOGVIEW
+        MENUITEM "S&cenarios",                  ID_VIEW_SCENARIO
+        MENUITEM SEPARATOR
+        MENUITEM "Time &Usage",                 ID_VIEW_SUMMARY
+        MENUITEM "Su&mmary",                    ID_VIEW_TABLE
+        MENUITEM SEPARATOR
+        MENUITEM "A&vailability",               ID_VIEW_AVAILABILITY
+        MENUITEM "Categ&ory",                   ID_VIEW_CATEGORY
+        MENUITEM "In&formation",                ID_VIEW_INFORMATION
+        MENUITEM "Run/Review",                  ID_VIEW_RUNREVIEW
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About DEMIST Analyser...",   ID_APP_ABOUT
+    END
+END
+
+IDR_CATLIST MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Analyse Bar",                ID_VIEW_ANALYSEBAR
+        MENUITEM SEPARATOR
+        MENUITEM "Rep. Categories",             ID_VIEW_CATLIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Log File",                   ID_VIEW_LOGVIEW
+        MENUITEM "S&cenarios",                  ID_VIEW_SCENARIO
+        MENUITEM SEPARATOR
+        MENUITEM "Time &Usage",                 ID_VIEW_SUMMARY
+        MENUITEM "Su&mmary",                    ID_VIEW_TABLE
+        MENUITEM SEPARATOR
+        MENUITEM "A&vailability",               ID_VIEW_AVAILABILITY
+        MENUITEM "Categ&ory",                   ID_VIEW_CATEGORY
+        MENUITEM "In&formation",                ID_VIEW_INFORMATION
+        MENUITEM "Run/Review",                  ID_VIEW_RUNREVIEW
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About DEMIST Analyser...",   ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About DEMIST Analyser"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "DEMIST Analyser Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2001",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CATEGORIES DIALOGEX 0, 0, 108, 44
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Reset",IDC_CAT_LOAD,4,4,50,12
+    CONTROL         "CustomColor",IDC_CAT_LIST,"MFCGridCtrl",WS_TABSTOP,4,20,
+                    100,20,0,HIDC_CAT_LIST
+    PUSHBUTTON      "Save",IDC_CAT_SAVE,56,4,50,12
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,0
+ PRODUCTVERSION 1,2,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x9L
+#else
+ FILEFLAGS 0x8L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Data Analyzer for DEMIST (Design Environment for Multi-representational Instructional Simulation Technology)\0"
+            VALUE "CompanyName", "CREDIT - University of Nottingham\0"
+            VALUE "FileDescription", "DEMIST Analyser\0"
+            VALUE "FileVersion", "1, 2, 0, 0\0"
+            VALUE "InternalName", "DEMIST Analyser\0"
+            VALUE "LegalCopyright", "Copyright © 2000-2005 / University of Nottingham\0"
+            VALUE "LegalTrademarks", "N. Van Labeke / S. Ainsworth\0"
+            VALUE "OriginalFilename", "DEMIST Analyser.exe\0"
+            VALUE "PrivateBuild", "Beta Version\0"
+            VALUE "ProductName", "DEMIST Analyser\0"
+            VALUE "ProductVersion", "1, 2, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CATEGORIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 101
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 37
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "DEMIST Analyser"
+    IDR_DEMISTTYPE          "\nDEMIST\nDEMIST\n\n\nDEMISTAnalyser.Document\nDEMIST Document"
+    IDR_LOGFILE             "Log File\n\n\n\n\n\n"
+    IDR_MODELSFILE          "Scenarios\n\n\n\n\n\n"
+    IDR_SUMMARY_VIEW        "Time Usage\n\n\n\n\n\n"
+    IDR_TABLE               "Summary\n\n\n\n\n\n"
+    IDR_AVAILABILITY        "MERs Usage\n\n\n\n\n\n"
+    IDR_CATEGORY            "Representational Category\n\n\n\n\n\n"
+    IDR_INFORMATION         "Informational Space\n\n\n\n\n\n"
+    IDR_RUNREVIEW           "Run - Review\n\n\n\n\n\n"
+    IDR_CATLIST             "Definition of the Representational Categories\n\n\n\n\n\n"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "DEMIST Analyser"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_ANALYSEBAR      "Show or hide the Analyse bar\nToggle Analyse"
+    ID_VIEW_LOGVIEW         "Open the User's Trace log file\nUser's Log"
+    ID_VIEW_SCENARIO        "Open the Scenarios log file\nScenarios"
+    ID_VIEW_SUMMARY         "Open the Time Usage View\nTime Usage"
+    ID_VIEW_TABLE           "Open the Summary View\nSummary"
+    ID_VIEW_AVAILABILITY    "Open the MERS Usage View\nMERS Usage"
+    ID_VIEW_CATEGORY        "Open the Representational Category View\nMERs Category"
+    ID_VIEW_INFORMATION     "Open the Informational Space View\nInformational Space"
+    ID_VIEW_RUNREVIEW       "Open the Run-Review View\nRun-Review"
+    ID_SCENARIO_LIST        "List of Scenarios"
+    ID_SCENARIO_NEXT        "Next SCenario"
+    ID_SCENARIO_PREV        "Prev SCenario"
+    ID_SUMMARY_ZPLUS        "Zoom out the view\nZoom out"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SUMMARY_ZMOINS       "Zoom in the view\nZoom in"
+    ID_SUMMARY_ACTIV        "Display the active Representation in the graphs\nShow Focus"
+    ID_SUMMARY_ACTION       "Show or hide the actions in the various ERs\nAction"
+    ID_SUMMARY_HYP          "Show or hide the Hypothesis in the various ERs\nHypothesis"
+    ID_SUMMARY_REL          "Show or hide the Map Relation in the various ERs\nMap Relation"
+    ID_SUMMARY_EXPSET       "Show or hide the changes in the Exp. Set in the various ERs\nExp. Set"
+    ID_SUMMARY_RUN          "Show or hide the controller's usage\nRun/Review"
+    ID_CATEGORY_ALPHA       "Sort by Category\nSort by Category"
+    ID_CATEGORY_PERCENT     "Sort by duration\nSort by Duration"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_VIEWCATEGORIES_TMPL "\nViewCategories\nViewCa\nViewCa Files (*.vie)\n.vie\nViewCategories.Document\nViewCa Document"
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\DEMIST Analyser.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
